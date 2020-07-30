@@ -1,2 +1,26 @@
-<h1>Under development</h1>
-<p>The Rust/Wasm part has been developed but Yew integration is still in progress.</p>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>RustyBolt</title>
+        <style>
+            body {background-color:#ffffff; font-family:Arial, sans-serif; font-size:14px;
+                    text-align:center;}	        /* center everything */
+            p {margin-left:auto; margin-right:auto; width:600px;
+               text-align: left;}	/* keep paragraphs narrow and centered */
+            input {font-size:115%;}				/* make buttons bigger */
+            input[type="range"] {width:100px;}	/* make sliders shorter */
+            select {font-size:115%;}			/* make selectors bigger too */
+            li {text-align:left;}
+            input[type=number]{width: 60px;}
+            .error { color: red; font-weight: bold;}
+        </style>
+        <script type="module">
+            import init from "./wasm.js"
+            init()
+        </script>
+    </head>
+    <body>
+    </body>
+    
+</html>
